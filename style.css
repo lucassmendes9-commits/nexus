@@ -162,7 +162,7 @@ nav a:hover {
     padding: 140px 20px 90px 20px;
     position: relative;
     z-index: 2;
-     background-image: url(/imagens/fundo.gif);
+     background-image: url(imagens/fundo.gif);
      Background-repeat: no-repeat;
 Background-size: cover;
 }
@@ -439,4 +439,5 @@ p {
 .comoserastronauta {
    width: 600px;
     height: 200px;
+
 }
