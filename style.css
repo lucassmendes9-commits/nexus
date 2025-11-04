@@ -1,0 +1,442 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+    background-color: #0B1F3F;
+    color: #FFFFFF;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+   
+}
+
+/* Header */
+header{
+   display: flex;
+    justify-content: flex-end;
+   margin-right: 20px;
+    background-color: #000000;
+}
+
+/* Nav */
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 2px 16px #1E90FF88;
+    border: 2.5px solid #1E90FF;
+    background: #fff;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1E90FF;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px #0008;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #FFFFFF;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+ul {
+    
+    list-style-type: none;
+
+}
+
+ul li.item-menu a{
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+}
+
+ul li.ativo{
+background-color: #0B1F3F;
+}
+
+
+
+nav {
+    width: 70px;
+    height: 100%;
+    background-color: #000000;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 ;
+    position: fixed;
+    overflow: hidden;
+    transition: .2s;
+    top: 0;
+    left: 0;
+    height: 100vh;       /* ocupa a altura inteira da tela */
+    z-index: 9999;       /* fica acima de tudo */
+    padding-top: 60px;   /* espaço no topo pros links */
+}
+
+nav.expandir {
+    width: 300px;
+
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.15rem;
+    padding: 10px 22px;
+    border-radius: 22px;
+}
+
+nav a:hover {
+    color: #1E90FF;
+    background: #1E90FF22;
+    transform: scale(1.09);
+}
+
+
+/* Botão CTA */
+.cta-btn {
+    margin-top: 36px;
+    background: #1E90FF;
+    color: #fff;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 32px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow: 0 2px 18px #1E90FF44;
+    transition: background 0.2s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+.cta-btn:hover {
+    background: #1560b7;
+    transform: scale(1.06);
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 140px 20px 90px 20px;
+    position: relative;
+    z-index: 2;
+     background-image: url(/imagens/fundo.gif);
+     Background-repeat: no-repeat;
+Background-size: cover;
+}
+
+.hero h2 {
+    font-size: 3.2rem;
+    margin-bottom: 28px;
+    color: #1E90FF;
+    text-shadow: 0 2px 14px #0008;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 900px;
+    line-height: 1.8;
+    color: #DDDDDD;
+    text-shadow: 0 2px 8px #0008;
+    margin-bottom: 18px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 38px;
+    padding: 60px 20px 30px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    background-color: #111C33ee;
+    padding: 32px 24px;
+    border-radius: 28px;
+    width: 340px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1.5px solid #1E90FF33;
+    box-shadow: 0 2px 18px #1E90FF22;
+    backdrop-filter: blur(2px);
+    font-size: 1.13rem;
+}
+
+.card h3 {
+    color: #1E90FF;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card:hover {
+    transform: translateY(-14px) scale(1.04);
+    box-shadow: 0 10px 32px #1E90FF55;
+    border-color: #1E90FF;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 14px #1E90FF22;
+}
+
+/* Info extra */
+.info-extra {
+    padding: 60px 20px 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.info-extra h3 {
+    font-size: 2.3rem;
+    margin: 70px 0 30px;
+    color: #1E90FF;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    position: relative;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 0 0 10px #1E90FF99;
+}
+
+.info-extra h3::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3.5px;
+    background: #1E90FF;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 28px ;
+    background: #111C33ee;
+    border-radius: 22px;
+    box-shadow: 0 2px 18px #1E90FF22;
+    padding: 32px;
+    
+}
+
+.info-block img {
+    width: 260px;
+    border-radius: 18px;
+    flex-shrink: 0;
+    box-shadow: 0 5px 24px #1E90FF44;
+    background: #fff;
+}
+
+.info-block p {
+    flex: 1;
+    font-size: 1.18rem;
+    line-height: 1.8;
+    color: #DDDDDD;
+}
+
+/* Footer */
+footer {
+    background-color: #000000e6;
+    text-align: center;
+    padding: 38px 0 22px 0;
+    border-top: 2.5px solid #1E90FF;
+    font-size: 1.1rem;
+    color: #AAAAAA;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+    border: 2.5px solid #1E90FF;
+    background: #fff;
+    object-fit: cover;
+}
+
+.footer-brand {
+    color: #1E90FF;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    letter-spacing: 1.2px;
+}
+
+/* Responsivo */
+@media (max-width: 1100px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-block {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+    .info-block img {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    .header-container {
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 70px 10px 40px 10px;
+    }
+    .info-extra {
+        padding: 30px 5px;
+    }
+    .card {
+        width: 98vw;
+        padding: 18px 4vw;
+    }
+    .brand-name {
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-logo {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+.aprovado1 {
+          background-color: #111C33ee;
+    padding: 32px 24px;
+    border-radius: 28px;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1.5px solid #1E90FF33;
+    box-shadow: 0 2px 18px #1E90FF22;
+    backdrop-filter: blur(2px);
+    font-size: 1.13rem;
+    
+}
+
+.aprovado1 :hover {
+     cursor: pointer;
+    transform: translateY(-14px) scale(1.04);
+    box-shadow: 0 10px 32px #1E90FF55;
+    border-color: #1E90FF;
+    
+}
+
+
+.caio {
+      border-radius: 22px; 
+    
+}
+
+.caique {
+    border-radius: 22px;
+}
+
+.daiane {
+    border-radius: 22px;
+}
+
+.luara{
+     border-radius: 22px;
+}
+.aprovados {
+   display: flex;
+    justify-content: center;
+    gap: 38px;
+    padding: 60px 20px 30px 20px;
+    
+}
+
+
+ h3 {
+  font-size: 2.3rem;
+    margin: 70px 0 30px;
+    color: #1E90FF;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    position: relative;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 0 0 10px #1E90FF99;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.comoserastronauta {
+   width: 600px;
+    height: 200px;
+}
